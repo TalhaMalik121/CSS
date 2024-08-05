@@ -1,0 +1,63 @@
+<html>
+
+<head>
+    <title>
+        Css 3 Animations
+    </title>
+</head>
+
+<body>
+    <style>
+    .main{
+        width: 500px;
+        height: 150px;
+        border: 2px solid black;
+        margin: auto;
+        position: relative;
+        
+
+    }
+    .box{
+        height: 100px;
+        width:100px;
+        background-color: red;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        animation: box 5s ;
+       /* animation-name: box;
+        animation-duration: 5s;*/
+        animation-iteration-count: 2;
+        animation-delay: 2s;
+        animation-direction: normal;
+        animation-fill-mode:backwards;
+        animation-timing-function: ease-in-out;
+        /*animation-timing-function:
+        ease-->
+        ease-in--->slow start but fast ended
+        ease-out--->fast start but slowly ended
+        ease-in-out--->slowly start and end slowed
+        linear-->even/equal distribution of timing
+        */
+    }
+    @keyframes box{
+        from{
+            top:20px;
+            left:20px;
+            background-color: red;
+        }
+         to{
+            top:20px;
+            left:380px;
+            background-color: red;
+        }
+       
+    }
+    </style>
+    <div class="main">
+        <div class="box"></div>
+    </div>
+
+</body>
+
+</html>

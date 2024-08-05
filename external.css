@@ -1,0 +1,16 @@
+.main {
+    width: 1000px;
+    height: 400px;
+    background-color: red;
+    font-size: 50px;
+    text-align: center;
+    font-style: italic;
+    color: yellow;
+    font-family: verdana;
+}
+.main:hover{
+    background-color: black;
+    color:white;
+    width:500px;
+    height: 200px;;
+}

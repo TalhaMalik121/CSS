@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <title>Border Properties</title>
+</head>
+
+<body>
+    <style>
+        .main {
+            width: 400px;
+            height: 400px;
+            border: 5px solid red;
+            font-size: 50px;
+            /* borders can be solid,dotted,double,groove,dashed*/
+            border-bottom: 5px solid black;
+            border-left: 5px solid blue;
+            border-right: 5px solid green;
+
+        }
+
+        .row1 {
+            /* i want to make border inside border so as border also took some pixel 
+            so is write width and height 10 less than orginal height and width of div*/
+            width: 255px;
+            height: 205px;
+            border: 5px solid yellow;
+            /*note that margins and borders also takes some pixels 
+            so adjust pixels of width and height carefully and accordingly for required results*/
+
+            /* margin:5px;
+            margin-top: 15px;   
+            margin-bottom: 15px;
+            margin-left:;
+            margin-right;*/
+
+            margin: 15px 5px 15px 5px;
+            /* its moves clockwise (top)px(right)px(bottom)px(left)px*/
+            /*this is called margin-sorting property ,,,margins lie outside borders*/
+
+            /*padding:15px;
+            padding-top: 155px;
+            padding-left: 125px;*/
+            padding: 155px 0px 0px 125px;
+
+        }
+    </style>
+    <div class="main">
+        <div class="row1">
+            Hello
+        </div>
+    </div>
+
+</body>
+
+</html>

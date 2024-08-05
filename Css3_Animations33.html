@@ -1,0 +1,68 @@
+<html>
+
+<head>
+    <title>
+        Css 3 Animations
+    </title>
+</head>
+
+<body>
+    <style>
+    .main{
+        width: 500px;
+        height: 500px;
+        border: 2px solid black;
+        margin: auto;
+        position: relative;
+        
+
+    }
+    .box{
+        height: 150px;
+        width:150px;
+        background-color: blue;
+        position: absolute;
+        animation: box 5s ;
+       /* animation-name: box;
+        animation-duration: 5s;*/
+        animation-iteration-count: infinite;
+        animation-delay: 2s;
+        animation-direction: alternate;
+        animation-fill-mode:backwards;
+    }
+    @keyframes box{
+        0%{
+            top:0px;
+            left:0px;
+            background-color: blue;
+        }
+        15%{
+            top:350px;
+            left:0px;
+            background-color: green;
+        }
+        50%{
+            top:350px;
+            left:350px;
+            background-color: yellow;
+        }
+        65%{
+            top:0px;
+            left:350px;
+            background-color: red;
+        }
+        100%{
+            top:0px;
+            left:0px;
+            background-color: blue;
+        }
+       
+    }
+    </style>
+    <div class="main">
+        <div class="box"></div>
+    </div>
+
+</body>
+
+</html>

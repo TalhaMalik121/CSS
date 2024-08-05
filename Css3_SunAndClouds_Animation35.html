@@ -1,0 +1,109 @@
+<html>
+<head>
+    <title>Sun adn Clouds Animation</title>
+</head>
+<body>
+    <style>
+        .main {
+            width: 100%;
+            height: 180px;
+            position: relative;
+            top:50px;
+            left:10px;
+        }
+        #sun {
+            width: 100px;
+            height: 100px;
+            background-color:rgba(253, 184, 19,0.7);
+            border-radius: 50%;
+            overflow: hidden;
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            animation: sun 5s ease-in-out 0s 1 normal both;
+        }
+        .cloud1 {
+            width: 170px;
+            height: 180px;
+            position: absolute;
+            animation: cloud1 5s linear 0s 1 normal both;
+            opacity: 0.8;
+        }
+        .cloud2 {
+            width: 170px;
+            height: 180px;
+            position: absolute;
+            animation: cloud2 2.5s ease-out 2.5s 1 normal both;
+            opacity: 0.8;
+        }
+        .cloud3 {
+            width: 170px;
+            height: 180px;
+            position: absolute;
+            animation: cloud3 2.5s ease-in 0s 1 normal both;
+            opacity: 0.8;
+        }
+        @keyframes sun{
+            from{
+                left:-15px;
+                top:20px;
+            }
+            to{
+                left:110%;
+                top:20px;
+                background-color:rgba(253, 184, 19,1);
+            }
+        }
+        @keyframes cloud1 {
+            from{
+                left: 20px;
+                top:-50px;
+            }
+            to{
+                left: 1400px;
+                top:0px;
+               }
+            }
+        @keyframes cloud2{
+            from{
+                left: 520px;
+                top:20px;
+            }
+            to{
+                left: 1400px;
+                top:20px; 
+               }
+            }
+            @keyframes cloud3 {
+           from{
+            left: 1000px;
+            top:30px;
+        }
+        to{
+            left:-20%;
+                top:30px;
+           }
+        }
+    </style>
+    <div class="main">
+        <div>
+            <div id="sun"></div>
+        </div>
+        <div class="cloud1" style="top:20px; left:150px;">
+            1
+            <img src="cloud.png" alt="img not found" name="cloud1" height="100%" width="100%" />
+
+        </div>
+        <div class="cloud2" style="top:20px; left:360px;">
+            2
+            <img src="cloud.png" alt="img not found" name="cloud1" height="100%" width="100%" />
+        </div>
+        <div class="cloud3" style="top:20px; left:1000px;"> 
+            3
+            <img src="cloud.png" alt="img not found" name="cloud1" height="100%" width="100%" />
+        </div>
+
+    </div>
+</body>
+
+</html>

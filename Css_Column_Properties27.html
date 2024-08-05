@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Css Column Properties</title>
+    </head>
+    <body>
+        <style>
+            .main{
+                width: 100%;
+                height:400px;
+                /*column-count: 3;*/
+                /*no of columns you want to make*/
+                column-gap: 10px;/*gap you want btw columns*/
+                column-fill: balance;/*you can fill coulumns balance or auto to fill first column
+                 when its is full then it fills next column and soon*/
+                 column-rule: 5px solid red;/*used to draw lines btw columns*/
+                 column-width: 300px;
+                 /*column count or width only one can work at a time*/
+                 
+            }
+            .h2{
+                column-span:all;
+                /*column-span:all;
+                means that first row reserve for heading
+                column-span:none;
+                means write h with content in column 
+                */
+            }
+        </style>
+        <div class="main">
+            <h2 class="h2">Hi this Loreum Paragraphs</h2>
+           
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati temporibus assumenda accusamus repudiandae dolore illo ex. Aperiam nihil illum, tenetur assumenda doloremque praesentium, commodi nesciunt eos laboriosam neque, modi soluta!
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi culpa nihil dolorum tempora est nam ea delectus saepe esse veritatis molestiae temporibus illo, sed iusto reprehenderit voluptatibus ducimus voluptates quia.</p>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati temporibus assumenda accusamus repudiandae dolore illo ex. Aperiam nihil illum, tenetur assumenda doloremque praesentium, commodi nesciunt eos laboriosam neque, modi soluta!
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi culpa nihil dolorum tempora est nam ea delectus saepe esse veritatis molestiae temporibus illo, sed iusto reprehenderit voluptatibus ducimus voluptates quia.</p>
+
+        </div>
+    </body>
+
+</html>

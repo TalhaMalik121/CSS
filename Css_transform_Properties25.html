@@ -1,0 +1,76 @@
+<HTML>
+<HEAD>
+<title>Transform Property</title>
+</HEAD>
+<BODY>
+    <style>
+        .main{
+            width: 132px;
+            height: 135px;
+            background-color: rgba(0, 212, 133, 0.9);
+              
+            /*tranform:translate(x,y);--->for placement
+            transform:translateX(200px);
+            transform:translateY(300px);
+            ---> +ive value inside page,-ive value outside page
+
+            tranform only works one time
+            the latest-most transform will work
+            */
+            
+
+            /*transform:skew(x,y);--->for tilt
+            --->deg,rad,turn
+            tranform works only one time
+            */
+            transform: translate(208px, 205px) skew(-29deg, 512deg);
+          
+          
+        }
+        .parent{
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            background-color: red;
+              /*tranform:rotate(x,y,z);---->for rotation
+            --->deg,rad
+            rotateX()---for rotation in x-axis
+            rotateY()---for rotation in y-axis
+            rotateZ---for rotation in z-axis
+            */
+            margin: auto;
+            transform: rotateX(0deg) rotateY(250deg) rotateZ(46deg);
+        }
+        .div3{
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            /*tranform:scale(x,y);--->used for scaling length and width
+            in x what you write its width is multiplied by that number
+            in y what you write its height is multiplied by that number
+            -ive values is box ko ulta krdeti hein
+            */
+
+            transform:  translateX(2px) scale(2, 2);
+            border: 1px solid black;
+            margin: auto;
+        }
+
+    </style>
+    <br/>
+    <br/>
+    <div class="div3">
+        Hi Bro What up
+    
+    </div>
+<div class="main">
+    
+</div>
+<br/>
+<div class="parent">
+
+</div>
+
+
+</BODY>
+</HTML>
